@@ -5,11 +5,11 @@ import os
 api_url = 'https://dhruva-api.bhashini.gov.in/services/inference/pipeline'
 headers = {
     'Content-Type': 'application/json',
-    'userID'      : '2ec037103f7e4f138f3e7f85fef43801',
-    'ulcaApiKey'  : '2209f0ecb5-4cc7-40d5-9c7c-985076ec1258',
-    'Authorization': '1gbQu9Urun_SmtAahp5MhMdOJiCPLXMMrxlPvdyRK7xYUyG40CRvCLrmYJomAuGd'
+    'userID'      : 'YOUR USER ID',
+    'ulcaApiKey'  : 'YOUR API-KEY',
+    'Authorization': 'YOUR AUTHORIZATION KEY'
 }
-file_path = r'C:\Users\Admin\Desktop\Uzavarsakthi Project\recording_files\4132801 qus.mp3'
+file_path = r'(Your File Path)'
 with open(file_path, 'rb') as audio_file:
     audio_content = base64.b64encode(audio_file.read()).decode('utf-8')
     

@@ -24,9 +24,9 @@ def call_bhashini_api(base64_string):
     url = 'https://dhruva-api.bhashini.gov.in/services/inference/pipeline'
     headers ={
               'Content-Type': 'application/json',
-              'userID'      : '2ec037103f7e4f138f3e7f85fef43801',
-              'ulcaApiKey'  : '2209f0ecb5-4cc7-40d5-9c7c-985076ec1258',
-              'Authorization': '1gbQu9Urun_SmtAahp5MhMdOJiCPLXMMrxlPvdyRK7xYUyG40CRvCLrmYJomAuGd'
+              'userID'      : 'YOUR USER ID',
+              'ulcaApiKey'  : 'YOUR API KEY',
+              'Authorization': 'YOUR AUTHORIZATION'
 }
     data = {
         "pipelineTasks": [
@@ -71,7 +71,7 @@ def write_to_file(file_name, text_output):
     except Exception as e:
         print(f"Error writing to file: {e}")
         
-audio_folder = r"C:\Users\Admin\Desktop\Uzavarsakthi Project\recording_files"
+audio_folder = r"(Your Recording files Path)"
         
 def process_all_files():
     # Loop through all files in the folder
